@@ -76,11 +76,26 @@ void DiscoQuatro(Disco Discos[]){
     }
 }
 
-void DiscoCinco(Disco Discos[]){
-    
+Disco DiscoCinco(Disco Discos[],int QuantidadeDeCancoes,float NotaMinima){
+    int Count = 0;
+    for(int d = 0; d < 100; d++){
+        if(Discos[d].QuantidadeDeCancoes >= QuantidadeDeCancoes && Discos[d].Nota >= NotaMinima){
+            Count++;
+            Disco DiscoSelecionado = Discos[i];
+            printf("\nTipo do disco: %c", DiscoSelecionado.Tipo);
+            printf("\nNome da banda: %s", DiscoSelecionado.NomeDaBanda);
+            printf("\nPreço de compra: R$%.2f", DiscoSelecionado.PrecoDeCompra);
+            printf("\nAno que foi lançado: %d", DiscoSelecionado.AnoQueFoiLancado);
+            printf("\nNome do disco: %s", DiscoSelecionado.NomeDoDisco);
+            printf("\nQuantidade de canções: %d", DiscoSelecionado.QuantidadeDeCancoes);
+            printf("\nNota do disco: %.1f", DiscoSelecionado.Nota); 
+            return DiscoSelecionado;
+        }
+    }
+    printf("\nVocê está muito exigente!");
 }
 
 void main(){
     Disco Discos[100];
-
+    int Opcao;
 }
